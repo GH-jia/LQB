@@ -3,6 +3,7 @@ public class Main {
         //new Circle().getArea();
         //new xulie().display();
         //new AB().sum();
-        new Bubble_sort().input();
+       // new Bubble_sort().input();
+        new SixteenToEight().start();
     }
 }
