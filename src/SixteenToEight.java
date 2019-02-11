@@ -30,7 +30,7 @@ public class SixteenToEight {
                 String numO = Integer.toOctalString(Integer.valueOf(numB.substring(j,j+3),2));
                 strO.append(numO);
             }
-            result[i] = strO.toString().replaceAll("^(0+)","");
+            result[i] = strO.toString().replaceAll("^(0+)","");//bug:如果十六进制为0，则转为八进制后也为0，但是经过取前导零后，就会输出“”
 
         }
         for (int i=0;i<n;i++){
